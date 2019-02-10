@@ -1,4 +1,4 @@
-export class Channel {
+export interface Channel {
   channelName: string;
   subscriberCount: number;
 }
