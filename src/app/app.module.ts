@@ -6,6 +6,9 @@ import { HomeComponent } from './components/home/home.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatButtonModule, MatCheckboxModule, MatTableModule, MatToolbarModule } from '@angular/material';
+import { HttpClientModule } from '@angular/common/http';
+import { YoutubeService } from "./service/youtube.service";
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -19,9 +22,10 @@ import { MatButtonModule, MatCheckboxModule, MatTableModule, MatToolbarModule } 
     MatButtonModule,
     MatCheckboxModule,
     MatTableModule,
-    MatToolbarModule
+    MatToolbarModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [YoutubeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
